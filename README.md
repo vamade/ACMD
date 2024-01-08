@@ -1,6 +1,8 @@
 ACMD
 ===
 
+**[Click here to download the latest release](https://github.com/vamade/ACMD/releases/latest/ACMD.exe)**
+
 ##### Notes
 * Runs without installation. .NET Framework 4.8.1 or higher is required.
 ---
