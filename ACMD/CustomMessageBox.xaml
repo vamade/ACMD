@@ -1,0 +1,34 @@
+﻿<Window x:Class="ACMD.CustomMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ACMD"
+        mc:Ignorable="d"
+        Height="120" Width="320"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Row="1" 
+            Orientation="Horizontal" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center">
+            <Image Source="{StaticResource icon.warning}" 
+           Width="19" 
+           Height="19" 
+           Margin="0,0,10,0"/>
+            <TextBlock x:Name="messageTextBlock" 
+               Margin="0,0,0,0" 
+               FontSize="13"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,15,0,0" Click="Button_Click"/>
+    </Grid>
+</Window>
